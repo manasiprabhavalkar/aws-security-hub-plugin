@@ -49,6 +49,7 @@ _Example: Blocked an unauthorized program run_
        (e.g. _*[account id].dkr.ecr.[region].amazonaws.com/aquasec/log-collector:aws-1.4*_)
     - ContainerCpu = CPU "size"; 1024 = 1 full CPU  
     - ContainerMemory = Memory size in megabytes 
+       (Make sure you check this link for the supported CPU and Memory values: [CPU and Memory constraints](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-cpu-memory-error.html) )
     - VPC = ID of the VPC where the script will be deployed 
     - CIDR = CIDR for the newly created subnet inside selected VPC. Must be within selected VPC CIDR range 
     - DBConnectionString = Postgresql URI formatted connection string for Aqua's audit DB 
